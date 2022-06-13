@@ -1,0 +1,320 @@
+:root {
+    /*custom propieties (son reutilizables)*/
+    --primario: #FFFF;
+    --primarioOscuro: #797a7c;
+    --secundario: hsl(58, 94%, 66%);
+    --secundario2: #22202088;
+    --secundarioOscuro: rgba(133, 82, 133, 0.667);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+
+html {
+    /*Propiedad de Paulirish para relacion ancho/relleno*/
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--negro);
+}
+
+a {
+    /*los enlances no tendran el interlineado*/
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  color: gray;
+}
+
+h2{
+  text-align: center;
+  color: rgb(192, 192, 7);
+}
+
+h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+/*Globales*/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1, 5;
+    margin: 0;
+}
+
+.menu ul li {
+  background-color: yellow;
+  color: black;
+  height: 45px;
+  width: 75px;
+  border: solid 1px black;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li:hover {
+  background: #5b78a7;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+.menu ul ul li {
+  float: none;
+  width: 150px
+}
+
+.menu ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+.menu ul li:hover>ul {
+  display: block;
+}
+
+.icono_menu{
+  font-size: xx-large;
+}
+
+.chat {
+  border-radius: 30px;
+  background-color: purple;
+  width: 80px;
+  height: 80px;
+}
+/* Menu */
+.menu_principal {
+
+  background-color: gray;
+  height: 45px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* Logo */
+
+.logo_head {
+  height: 80px;
+}
+
+.logoPagina {
+  justify-content: center;
+  text-align: center;
+}
+/* Footer */
+
+footer {
+  background-color: gray;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  justify-content: left;
+  text-align: center;
+  width: 100%;
+  ;
+}
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.video {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.parrafo {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  padding: 10px;
+  margin: 0px;
+
+}
+
+.seccion {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.articulo_icono {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  vertical-align: bottom;
+  width: 100px;
+}
+
+@media (min-width: 760px) {
+
+  .fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+  }
+}
+
+  @media (min-width: 768px) {
+    .fotos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+  /*Grid*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+  /*Productos*/
+.productos {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+
+.producto__nombre {
+    font-size: 4rem;
+}
+
+.producto__precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 1rem, 0;
+    text-align: center;
+    line-height: 1.2rem;
+
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.articulo {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 25px;
+  width: 150px;
+}
+
+.seccion h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contacto_body {
+  justify-content: center;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.mapa {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formulario_contacto {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.centrar {
+  text-align: center;
+}
