@@ -192,7 +192,6 @@ footer {
   animation-duration: 5s;
   animation-timing-function: infinite;
 }
-
 .chat {
   position: fixed;
   bottom: 0;
@@ -208,8 +207,8 @@ footer {
 }
 
 .parrafo {
-  display: inline-block;
-  float: right;
+  /* display: inline-block; */
+  /* float: right; */
   width: 40%;
   padding: 10px;
   margin: 0px;
@@ -322,6 +321,7 @@ footer {
 .centrar {
   text-align: center;
 }
+
 
 /* keyframes */
 @keyframes movimiento {
