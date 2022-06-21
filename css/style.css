@@ -182,7 +182,8 @@ body {
 
 footer {
   background-color: gray;
-  display: flex;
+  /* display: flex; */
+  position : fixed;
   left: 0;
   bottom: 0;
   justify-content: left;
@@ -207,8 +208,8 @@ footer {
 }
 
 .parrafo {
-  /* display: inline-block; */
-  /* float: right; */
+  display: inline-block;
+  float: right;
   width: 40%;
   padding: 10px;
   margin: 0px;
@@ -247,11 +248,11 @@ footer {
   height: 250px;
   transition: height 4s, width 1s;
 }
-
+/* 
 .h1:hover {
   width: 250px;
   height: 150px;
-}
+} */
 
 /*Productos*/
 .productos {
@@ -263,12 +264,17 @@ footer {
   width: 100%;
 }
 
+.producto__informacion{
+  height: 100px;
+}
 
 .producto__nombre {
-  font-size: 4rem;
+  margin-top: 20px;
+  font-size: 3rem;
 }
 
 .producto__precio {
+  margin-top: 40px;
   font-size: 2.8rem;
   color: var(--secundario);
 }
