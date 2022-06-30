@@ -1,8 +1,58 @@
 @import './titulos.scss';
 @import './parrafos.scss';
 
+$def_display: inline-block;
+$align: center;
 
 main{
 
     padding:1rem;
 }
+
+@mixin animation($mov, $duration, $timing_func) {
+
+    animation-name: $mov;
+    animation-duration: $duration;
+    animation-timing-function: $timing_func;
+
+  }
+
+  
+/* Footer */
+
+footer {
+    background-color: gray;
+    /* display: flex; */
+    position : fixed;
+    left: 0;
+    bottom: 0;
+    justify-content: left;
+    text-align: center;
+    width: 100%;
+    @include animation(movimiento , 5s , infinite);
+  }
+
+  %art {
+    display: $def_display;
+    justify-content: $align;
+    text-align: $align;
+  }
+
+
+  .articulo_icono {
+    @extend %art;
+    vertical-align: bottom;
+    width: 100px;
+  }
+
+  .articulo {
+    @extend %art;
+    vertical-align: bottom;
+    margin: 25px;
+    width: 150px;
+  }
+  
+  .seccion {
+    @extend %art;
+    width: 100%;
+  }

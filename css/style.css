@@ -178,21 +178,7 @@ body {
   text-align: center;
 }
 
-/* Footer */
 
-footer {
-  background-color: gray;
-  /* display: flex; */
-  position : fixed;
-  left: 0;
-  bottom: 0;
-  justify-content: left;
-  text-align: center;
-  width: 100%;
-  animation-name: movimiento;
-  animation-duration: 5s;
-  animation-timing-function: infinite;
-}
 .chat {
   position: fixed;
   bottom: 0;
@@ -214,21 +200,6 @@ footer {
   padding: 10px;
   margin: 0px;
 
-}
-
-.seccion {
-  display: inline-block;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-.articulo_icono {
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  vertical-align: bottom;
-  width: 100px;
 }
 
 /* Nosotros */
@@ -294,14 +265,6 @@ footer {
 }
 
 
-.articulo {
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  vertical-align: bottom;
-  margin: 25px;
-  width: 150px;
-}
 
 .seccion h2 {
   margin-top: 10px;

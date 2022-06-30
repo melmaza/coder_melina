@@ -7,3 +7,34 @@ p {
 
 main {
   padding: 1rem; }
+
+/* Footer */
+footer {
+  background-color: gray;
+  /* display: flex; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: left;
+  text-align: center;
+  width: 100%;
+  animation-name: movimiento;
+  animation-duration: 5s;
+  animation-timing-function: infinite; }
+
+.articulo_icono, .articulo, .seccion {
+  display: inline-block;
+  justify-content: center;
+  text-align: center; }
+
+.articulo_icono {
+  vertical-align: bottom;
+  width: 100px; }
+
+.articulo {
+  vertical-align: bottom;
+  margin: 25px;
+  width: 150px; }
+
+.seccion {
+  width: 100%; }
