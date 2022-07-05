@@ -1,6 +1,8 @@
 @import './titulos.scss';
 @import './parrafos.scss';
+@import './colores.scss';
 
+$fuentePrincipal: 'Staatliches', cursive;
 $def_display: inline-block;
 $align: center;
 
@@ -16,7 +18,6 @@ main{
     animation-timing-function: $timing_func;
 
   }
-
   
 /* Footer */
 
@@ -56,3 +57,270 @@ footer {
     @extend %art;
     width: 100%;
   }
+
+  html {
+    /*Propiedad de Paulirish para relacion ancho/relleno*/
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $negro;
+  }
+  
+  a {
+    /*los enlances no tendran el interlineado*/
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: gray;
+  }
+  
+  h2 {
+    text-align: center;
+    color: rgb(192, 192, 7);
+  }
+  
+  h3 {
+    text-align: center;
+    color: $secundario;
+    font-family: $fuentePrincipal;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.4rem;
+  }
+  
+    
+  /*Globales*/
+  body {
+    background-color: $body !important;
+    font-size: 1.6rem;
+    line-height: 1, 5;
+    margin: 0;
+    height: 100%;
+  }
+  
+  .icono_menu {
+    font-size: xx-large;
+  }
+  
+  .chat {
+    border-radius: 30px;
+    background-color: purple;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Menu */
+  
+  
+  .menu_principal {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(90deg, rgba(243, 91, 4, 0.7150210425967262) 0%, rgba(244, 245, 33, 1) 24%, rgba(25, 29, 29, 1) 100%);
+  }
+  
+
+  /* Logo */
+  
+  .logo_head {
+    height: 80px;
+  }
+  
+  .logoPagina {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .video {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    margin: 0px;
+  }
+  
+  .parrafo {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    padding: 10px;
+    margin: 0px;
+  
+  }
+  
+  /* Nosotros */
+  
+  .fotoNosotros:hover {
+    filter: saturate(500%);
+    margin:0;
+  }
+  
+  .h1 {
+    width: 550px;
+    height: 250px;
+    transition: height 4s, width 1s;
+  }
+  /* 
+  .h1:hover {
+    width: 250px;
+    height: 150px;
+  } */
+  
+  /*Productos*/
+  .productos {
+    background-color: $primarioOscuro;
+    padding: 1rem;
+  }
+  
+  .producto__imagen {
+    width: 100%;
+  }
+  
+  .producto__informacion{
+    height: 100px;
+  }
+  
+  .producto__nombre {
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+  
+  .producto__precio {
+    margin-top: 40px;
+    font-size: 2.8rem;
+    color: $secundario;
+  }
+  
+  .producto__nombre,
+  .producto__precio {
+    font-family: $fuentePrincipal;
+    margin: 1rem, 0;
+    text-align: center;
+    line-height: 1.2rem;
+  
+  }
+  
+  .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .seccion h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contacto_body {
+    justify-content: center;
+    vertical-align: bottom;
+    text-align: center;
+  }
+  
+  .mapa {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .formulario_contacto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .centrar {
+    text-align: center;
+  }
+  
+  
+  /* keyframes */
+  @keyframes movimiento {
+    0% {
+      width: 100px;
+    }
+  
+    30% {
+      widht: 50px;
+    }
+  
+    75% {
+      widht: 200px
+    }
+  }
+  
+  /* Medias Queries */
+  @media (min-width: 760px) {
+  
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+  
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .fotos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
+  /*Grid*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .altura{
+      height: 20rem;
+    }
+  }
+
